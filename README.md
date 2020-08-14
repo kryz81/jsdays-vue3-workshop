@@ -6,8 +6,8 @@
 * **project** - full Vue.js application (optional)
 
 Each lab contains two folders:
-* **begin** - a template without solution
-* **end** - an example solution 
+* **template** - a template without solution
+* **solution** - an example solution 
 
 #### Useful links
 * [Vue.js 3 Documentation](https://v3.vuejs.org/)
