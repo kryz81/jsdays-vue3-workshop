@@ -14,4 +14,5 @@ Each lab contains two folders:
 * [Vite Documentation](https://github.com/vitejs/vite)
 * [Vuex for Vue3](https://github.com/vuejs/vuex/tree/v4.0.0-beta.4)
 * [Vue Router for Vue3](https://github.com/vuejs/vue-router-next)
+* [Test Utils for Vue3](https://vuejs.github.io/vue-test-utils-next-docs/guide/introduction.html)
 * [Awesome Vue - list of resources](https://github.com/vuejs/awesome-vue)
