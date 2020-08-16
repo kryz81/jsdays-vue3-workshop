@@ -37,7 +37,7 @@ export default {
       formOpened: false,
     };
   },
-  async mounted() {
+  async created() {
     this.projects = await getProjects();
   },
   computed: {
