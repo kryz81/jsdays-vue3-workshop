@@ -7,25 +7,17 @@
     @remove-day="removeDay"
     @reset-progress="resetProgress"
   />
-  <p>
-    <button class="btn btn-success" @click="formOpened = !formOpened">
-      Add new project
-    </button>
-  </p>
-  <AddProject v-if="formOpened" @save="saveProject" />
 </template>
 
 <script>
 import { projects } from "./projects";
 import InfoBoard from "./components/InfoBoard.vue";
-import AddProject from "./components/AddProject.vue";
 import ProjectList from "./components/ProjectList.vue";
 
 export default {
   name: "App",
   components: {
     ProjectList,
-    AddProject,
     InfoBoard,
   },
   data() {
