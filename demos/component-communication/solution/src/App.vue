@@ -44,25 +44,25 @@ export default {
     },
   },
   methods: {
-    addDay(projectIndex) {
-      this.projects = this.projects.map((project, index) => {
-        if (projectIndex === index) {
+    addDay(projectId) {
+      this.projects = this.projects.map((project) => {
+        if (projectId === project.id) {
           return { ...project, loggedDays: project.loggedDays + 1 };
         }
         return project;
       });
     },
-    removeDay(projectIndex) {
-      this.projects = this.projects.map((project, index) => {
-        if (projectIndex === index) {
+    removeDay(projectId) {
+      this.projects = this.projects.map((project) => {
+        if (projectId === project.id) {
           return { ...project, loggedDays: project.loggedDays - 1 };
         }
         return project;
       });
     },
-    resetProgress(projectIndex) {
-      this.projects = this.projects.map((project, index) => {
-        if (projectIndex === index) {
+    resetProgress(projectId) {
+      this.projects = this.projects.map((project) => {
+        if (projectId === project.id) {
           return { ...project, loggedDays: 0 };
         }
         return project;

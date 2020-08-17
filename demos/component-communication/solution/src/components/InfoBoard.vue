@@ -8,6 +8,15 @@
 <script>
 export default {
   name: "InfoBoard",
-  props: ["budget", "loggedSum"],
+  props: {
+    budget: {
+      type: Number,
+      required: true,
+    },
+    loggedSum: {
+      type: Number,
+      required: true,
+    },
+  },
 };
 </script>

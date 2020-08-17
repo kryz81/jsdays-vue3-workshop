@@ -12,7 +12,7 @@
       <td>Actions</td>
     </tr>
     <tr
-      v-for="(project, index) in projects"
+      v-for="project in projects"
       :key="project.projectName"
       :class="{ highPriority: project.highPriority }"
     >
@@ -25,20 +25,20 @@
         {{ project.loggedDays }}
       </td>
       <td :style="actions">
-        <button class="btn btn-primary btn-sm mr-3" @click="addDay(index)">
+        <button class="btn btn-primary btn-sm mr-3" @click="addDay(project.id)">
           Add 1 day
         </button>
         <button
           class="btn btn-primary btn-sm mr-3"
           :disabled="project.loggedDays === 0"
-          @click="removeDay(index)"
+          @click="removeDay(project.id)"
         >
           Remove 1 day
         </button>
         <button
           class="btn btn-danger btn-sm"
           :disabled="project.loggedDays === 0"
-          @click="resetProgress(index)"
+          @click="resetProgress(project.id)"
         >
           Reset logged days
         </button>
@@ -177,25 +177,25 @@ export default {
     },
   },
   methods: {
-    addDay(projectIndex) {
-      this.projects = this.projects.map((project, index) => {
-        if (projectIndex === index) {
+    addDay(projectId) {
+      this.projects = this.projects.map((project) => {
+        if (projectId === project.id) {
           return { ...project, loggedDays: project.loggedDays + 1 };
         }
         return project;
       });
     },
-    removeDay(projectIndex) {
-      this.projects = this.projects.map((project, index) => {
-        if (projectIndex === index) {
+    removeDay(projectId) {
+      this.projects = this.projects.map((project) => {
+        if (projectId === project.id) {
           return { ...project, loggedDays: project.loggedDays - 1 };
         }
         return project;
       });
     },
-    resetProgress(projectIndex) {
-      this.projects = this.projects.map((project, index) => {
-        if (projectIndex === index) {
+    resetProgress(projectId) {
+      this.projects = this.projects.map((project) => {
+        if (projectId === project.id) {
           return { ...project, loggedDays: 0 };
         }
         return project;
