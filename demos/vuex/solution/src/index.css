@@ -1,0 +1,13 @@
+body {
+  padding: 25px;
+}
+
+.light {
+  background-color: #f0f0f0;
+  color: darkblue;
+}
+
+.dark {
+  background-color: cornflowerblue;
+  color: #fff;
+}
