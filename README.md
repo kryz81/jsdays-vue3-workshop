@@ -3,7 +3,6 @@
 #### Source code structure
 * **demos** - live demos of Vue features
 * **labs** - coding challenges for attendees
-* **project** - full Vue.js application (optional)
 
 Each lab contains two folders:
 * **template** - a template without solution
