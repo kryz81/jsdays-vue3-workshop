@@ -21,16 +21,21 @@
 </template>
 
 <script>
+import { useStore } from "vuex";
+import { computed } from "vue";
+
 export default {
   name: "Header",
-  props: ["theme"],
-  emits: ["switch-theme"],
-  setup(props, { emit }) {
+  setup() {
+    const store = useStore();
+    const theme = computed(() => store.state.theme);
+
     function switchTheme() {
-      emit("switch-theme");
+      const newTheme = theme.value === "light" ? "dark" : "light";
+      store.commit("setTheme", newTheme);
     }
 
-    return { switchTheme };
+    return { theme, switchTheme };
   },
 };
 </script>

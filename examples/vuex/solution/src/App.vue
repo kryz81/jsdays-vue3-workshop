@@ -1,5 +1,5 @@
 <template>
-  <Header :theme="theme" @switch-theme="switchTheme" />
+  <Header />
   <ProjectList :projects="data.projects" />
 </template>
 
@@ -18,26 +18,13 @@ export default {
     ProjectList,
   },
   setup() {
-    const CONFIG = { theme: "light" }; // from API or a config file
-    const store = useStore();
-    store.commit("setTheme", CONFIG.theme);
-
     const data = reactive({ projects: [] });
     onMounted(() => {
       data.projects = PROJECTDATA;
     });
 
-    const theme = computed(() => store.state.theme);
-
-    function switchTheme() {
-      const newTheme = theme.value === "light" ? "dark" : "light";
-      store.commit("setTheme", newTheme);
-    }
-
     return {
       data,
-      theme,
-      switchTheme,
     };
   },
 };
