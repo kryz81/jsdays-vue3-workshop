@@ -1,5 +1,5 @@
 {
-  "name": "template",
+  "name": "handling-events_template",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",

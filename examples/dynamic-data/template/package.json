@@ -1,5 +1,5 @@
 {
-  "name": "template",
+  "name": "dynamic-data_template",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",

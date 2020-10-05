@@ -1,0 +1,25 @@
+{
+  "name": "jsdays-vue3-workshop",
+  "version": "0.0.1",
+  "description": "* **demos** - live demos of Vue features\r * **labs** - coding challenges for attendees",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "postinstall": "lerna bootstrap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kryz81/jsdays-vue3-workshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kryz81/jsdays-vue3-workshop/issues"
+  },
+  "homepage": "https://github.com/kryz81/jsdays-vue3-workshop#readme",
+  "dependencies": {
+    "lerna": "^3.22.1"
+  }
+}
