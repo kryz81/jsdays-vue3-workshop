@@ -1,11 +1,7 @@
 {
   "name": "jsdays-vue3-workshop",
-  "version": "0.0.1",
-  "description": "* **demos** - live demos of Vue features\r * **labs** - coding challenges for attendees",
-  "main": "index.js",
-  "directories": {
-    "example": "examples"
-  },
+  "version": "0.0.0",
+  "description": "Javascript Days 2020 Munich/Berlin, Vue.js 3 Workshop",
   "scripts": {
     "postinstall": "lerna bootstrap"
   },
@@ -13,7 +9,7 @@
     "type": "git",
     "url": "git+https://github.com/kryz81/jsdays-vue3-workshop.git"
   },
-  "author": "",
+  "author": "Piechowicz Krzysztof & Maximilian Lang",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kryz81/jsdays-vue3-workshop/issues"

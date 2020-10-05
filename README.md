@@ -1,4 +1,4 @@
-## Javascript Days 2020 Munich, Vue.js 3 Workshop
+## Javascript Days 2020 Munich/Berlin, Vue.js 3 Workshop
 
 #### Source code structure
 * **demos** - live demos of Vue features
