@@ -44,13 +44,13 @@
 </template>
 
 <script>
-import { projects } from "./projects";
+import { projects as PROJECTDATA } from "./projects";
 
 export default {
   name: "App",
   data() {
     return {
-      projects: projects,
+      projects: PROJECTDATA,
       budget: 20,
       actions: {
         backgroundColor: "#f9f9f9",

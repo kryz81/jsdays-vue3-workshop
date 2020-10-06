@@ -72,9 +72,9 @@
       <label for="category">Category<span class="required">*</span></label>
       <select id="category" class="form-control" v-model="form.category">
         <option value="">--- Select ---</option>
-        <option v-for="option in projectCategories" :value="option">{{
-          option
-        }}</option>
+        <option v-for="option in projectCategories" :value="option">
+          {{ option }}
+        </option>
       </select>
     </div>
     <div class="form-group form-check">
