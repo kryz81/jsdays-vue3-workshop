@@ -5,4 +5,4 @@
 2. Implement 3 actions for every project: add day, remove day, reset progress 
 3. Show available budget and the sum of logged days (for sum use "computed")
 4. Show a warning only when the number of logged days is larger than budget 
-5. For "estimated days" cell in the table set color dynamically (red when estimated days > logged days). Use class binding
+5. For "logged days" cell in the table set color dynamically (red when estimated days > logged days). Use class binding
