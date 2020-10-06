@@ -1,5 +1,26 @@
 export const projects = [
-  { projectName: "Online Shop", estimatedDays: 6, loggedDays: 0 },
-  { projectName: "Company Website", estimatedDays: 4, loggedDays: 0 },
-  { projectName: "Build Script", estimatedDays: 1, loggedDays: 0 },
+  {
+    id: 1,
+    projectName: "Online Shop",
+    category: "Client Project",
+    highPriority: true,
+    estimatedDays: 6,
+    loggedDays: 0,
+  },
+  {
+    id: 2,
+    projectName: "Company Website",
+    category: "Internal Project",
+    highPriority: false,
+    estimatedDays: 4,
+    loggedDays: 0,
+  },
+  {
+    id: 3,
+    projectName: "Build Script",
+    category: "Proof of Concept",
+    highPriority: true,
+    estimatedDays: 1,
+    loggedDays: 0,
+  },
 ];
