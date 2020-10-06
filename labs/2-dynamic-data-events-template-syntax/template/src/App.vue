@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import { projects } from "./projects";
+import { projects as PROJECTDATA } from "./projects";
 
 export default {
   name: "App",
