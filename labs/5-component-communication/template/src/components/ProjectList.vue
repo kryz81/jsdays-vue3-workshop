@@ -7,7 +7,7 @@
       <td>Actions</td>
     </tr>
     <tr
-      v-for="(project, index) in projects"
+      v-for="project in projects"
       :key="project.projectName"
       :class="{ highPriority: project.highPriority }"
     >
@@ -20,20 +20,20 @@
         {{ project.loggedDays }}
       </td>
       <td :style="actions">
-        <button class="btn btn-primary btn-sm mr-3" @click="addDay(index)">
+        <button class="btn btn-primary btn-sm mr-3" @click="addDay(project.id)">
           Add 1 day
         </button>
         <button
           class="btn btn-primary btn-sm mr-3"
           :disabled="project.loggedDays === 0"
-          @click="removeDay(index)"
+          @click="removeDay(project.id)"
         >
           Remove 1 day
         </button>
         <button
           class="btn btn-danger btn-sm"
           :disabled="project.loggedDays === 0"
-          @click="resetProgress(index)"
+          @click="resetProgress(project.id)"
         >
           Reset logged days
         </button>
@@ -43,9 +43,6 @@
 </template>
 
 <script>
-
-import { projects } from "../projects";
-
 export default {
   name: "ProjectList",
   props: {
@@ -59,18 +56,18 @@ export default {
       actions: {
         backgroundColor: "#f9f9f9",
       },
-      projects
+      projects: [],
     };
   },
   methods: {
-    addDay(projectIndex) {
-      console.log('adding a day')
+    addDay(projectId) {
+      console.log("adding a day");
     },
-    removeDay(projectIndex) {
-      console.log('removing a day')
+    removeDay(projectId) {
+      console.log("removing a day");
     },
-    resetProgress(projectIndex) {
-      console.log('reset progress')
+    resetProgress(projectId) {
+      console.log("reset progress");
     },
   },
 };

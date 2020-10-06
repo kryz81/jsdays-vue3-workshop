@@ -1,7 +1,7 @@
 <template>
   <h3>Work Tracker</h3>
-  <InfoBoard/>
-  <ProjectList/>
+  <InfoBoard />
+  <ProjectList />
   <p>
     <button class="btn btn-success" @click="formOpened = !formOpened">
       Add new project
@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import { projects } from "./projects";
+import { projects as PROJECTDATA } from "./projects";
 import InfoBoard from "./components/InfoBoard.vue";
 import AddProject from "./components/AddProject.vue";
 import ProjectList from "./components/ProjectList.vue";
@@ -25,7 +25,7 @@ export default {
   },
   data() {
     return {
-      projects: projects,
+      projects: PROJECTDATA,
       budget: 20,
       formOpened: false,
     };
